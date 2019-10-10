@@ -32,10 +32,10 @@ document.querySelector('#button').addEventListener('click', function() {
             if (check.checked) { 
                 let arrayOfNumbers = setOfNumbers.split('');
                 for (let a = 0; a < (arrayOfNumbers.length); a++) {
-                    let ss = Math.floor(Math.random(0, arrLetters.length) * arrLetters.length)
-                    arrLetters.splice(ss, 0, arrayOfNumbers[a])
+                    let ss = Math.floor(Math.random(0, arrLetters.length) * arrLetters.length);
+                    arrLetters.splice(ss, 0, arrayOfNumbers[a]);
                 }
-            };
+            }
             // console.log(arrLetters)
             // проверка чекбокса на чек
             //если да, добавление в массив случайным образом
@@ -45,7 +45,7 @@ document.querySelector('#button').addEventListener('click', function() {
                     let bb = Math.floor(Math.random(0, arrLetters.length) * arrLetters.length);
                     arrLetters.splice(bb, 0, arrayOfPunctuation[b])
                 }
-            };
+            }
             // console.log(arrLetters)
             for (let i = 0; i < textLength.value; i++) {
                 let x = Math.floor(Math.random(0, arrLetters.length) * arrLetters.length);
