@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Генератор пароля</title>
+  <link href="https://fonts.googleapis.com/css?family=Lobster|Play|Roboto&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+  <body>
+    <section class="section">
+      <div class="passWrap">
+        <h1>Генератор паролей</h1>
+        <div class="inputLength">
+          <p>введите длину пароля от&nbsp8&nbspдо&nbsp20 символов</p>
+          <input class="textLength" type="number" name="number" id="textLength" value="8" min="8" max="20">
+        </div>
+        <div class="inputMaxPass">
+          <p>сколько нужно вариантов паролей (максимум&nbsp10)</p>
+          <input type="number" name="number" id="maxPass" value="2" min="1" max="10">
+        </div>
+        <div class="checkNumb">
+          <input type="checkbox" name="check" id="check">
+          <span>использовать цифры 0-9?</span>
+        </div>
+        <div class="checkPunct">
+          <input type="checkbox" name="check" id="punct">
+          <span>использовать знаки пунктуации?</span>
+        </div>
+        <button class="button" id="button">сгенерировать пароль</button>
+        <div class="pass">
+        </div>
+      </div>
+    </section>
+    <script src="https://code.jquery.com/jquery-2.1.0.js"></script>
+    <script src="js/index.js"></script>
+   </body>
+</html>

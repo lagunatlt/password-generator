@@ -1,0 +1,167 @@
+*
+{
+    margin: 0;
+    padding: 0;
+}
+/*отмена стандартной обводки браузера*/
+button:active,
+button:focus
+{
+    outline: none !important;
+}
+button::-moz-focus-inner
+{
+    border: 0 !important;
+}
+/*---------------*/
+body
+{
+    width: 100%;
+    height: 100vh;
+    /* background: rgb(2, 0, 36); */
+
+    background: linear-gradient(166deg, rgba(2, 0, 36, 1) 0%, rgba(49, 48, 111, .695098107602416) 35%, rgba(27, 142, 102, .7763306005996149) 100%);
+}
+h1
+{
+    font-family: 'play';
+
+    padding-bottom: 30px;
+
+    text-transform: uppercase;
+    text-align: center;
+}
+p
+{
+    padding-bottom: 5px;
+}
+.section
+{
+    display: flex;
+
+    box-sizing: border-box;
+    width: 100%;
+    min-width: 320px;
+    margin: 10px auto;
+
+    color: #fff;
+
+    justify-content: center;
+}
+.passWrap
+{
+    font-family: 'roboto';
+    font-size: 22px;
+
+    display: flex;
+    flex-direction: column;
+
+    max-width: 500px;
+
+    text-align: left;
+
+    justify-content: center;
+}
+.pass
+{
+    font-size: 30px;
+    line-height: 50px;
+
+    display: flex;
+    flex-direction: column;
+
+    min-height: 60px;
+    padding: 50px;
+
+    text-align: center;
+
+    color: black;
+    border: 1px solid black;
+    border-radius: 10px;
+    background-color: beige;
+
+    justify-content: center;
+    align-items: center;
+}
+input
+{
+    font-size: 18px;
+
+    margin-bottom: 15px;
+    padding: 8px 10px;
+
+    color: grey;
+    border: 3px solid grey;
+    border-radius: 10px;
+}
+.button
+{
+    font-family: 'lobster';
+    font-size: 30px;
+
+    width: 100%;
+    margin: 20px 0;
+    padding: 15px 0 20px;
+
+    transition: all .1s ease-in;
+
+    color: #fff;
+    border: 1px solid #fff;
+    border-radius: 10px;
+    background-color: rgb(113, 211, 56);
+    box-shadow: 0 5px 9px rgba(0, 0, 0, .5);
+    -ms-user-select: none;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+}
+.button:active
+{
+    transition: all .1s ease-in;
+    transform: translateY(1px);
+
+    background-color: rgb(139, 238, 81);
+}
+.error
+{
+    font-size: 14px;
+
+    margin-bottom: 20px;
+    padding: 5px 15px;
+
+    transition: all .5s ease-in;
+
+    border-radius: 5px;
+    background-color: rgba(255, 127, 127, .6);
+}
+@media (max-width: 600px)
+{
+    h1
+    {
+        font-size: 20px;
+    }
+    .passWrap
+    {
+        font-size: 15px;
+    }
+    .pass
+    {
+        font-size: 20px;
+        line-height: 30px;;
+
+        padding: 15px;
+    }
+    .section
+    {
+        max-width: 320px;
+    }
+    input
+    {
+        font-size: 15px;
+    }
+    .button
+    {
+        font-size: 25px;
+    }
+}
