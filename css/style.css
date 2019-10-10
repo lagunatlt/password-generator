@@ -115,7 +115,6 @@ input
     -khtml-user-select: none;
     -webkit-user-select: none;
     user-select: none;
-    cursor: pointer;
 }
 .button:active
 {
@@ -124,7 +123,11 @@ input
 
     background-color: rgb(139, 238, 81);
 }
-[checkbox] {
+
+#check,
+#punct,
+.button
+ {
     cursor: pointer;
 }
 
